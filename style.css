@@ -3,22 +3,25 @@
   margin: 0;
 }
 
-body {
+.container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.container {
-  display: grid;
-  grid-template-rows: repeat(16, 1fr);
-  grid-template-columns: repeat(16, 1fr);
+.grid {
+  display: flex;
+  flex-flow: row wrap;
   background-color: aliceblue;
+  width: 700px;
+  height: 700px;
 }
 
-.grid {
-  padding: 1em;
-  border: 1px solid pink;
-  text-align: center;
+.box {
+  border: 1px solid rgba(155, 163, 172, 0.582);
+}
+.active {
+  background-color: lemonchiffon;
 }
