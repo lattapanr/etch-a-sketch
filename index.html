@@ -10,9 +10,18 @@
   <body>
     <div class="container">
       <div class="menu">
-        <input type="range" for="range" min="8" max="64" value="8" />
-        <label for="range"></label>
-        <button class="reset">Reset</button>
+        <div class="range-container">
+          <label for="range"></label>
+          <input type="range" for="range" min="8" max="64" value="8" />
+        </div>
+        <div class="color-palette">
+          <p class="colors-label">Pick your season:</p>
+          <button class="option selectopt" id="winter">Winter</button>
+          <button class="option selectopt" id="spring">Spring</button>
+          <button class="option selectopt" id="summer">Summer</button>
+          <button class="option selectopt" id="autumn">Autumn</button>
+        </div>
+        <button class="reset">Clear</button>
       </div>
       <div class="grid"></div>
     </div>
