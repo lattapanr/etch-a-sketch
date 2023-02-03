@@ -6,7 +6,7 @@ I love sending my project out to my friends and family for them to play with, bu
 
 ## Live Demo
 
-[Click here]to see the live demo(https://itsnoey.github.io/etch-a-sketch/)
+To see the live demo [click here](https://itsnoey.github.io/etch-a-sketch/)
 
 
 ## Screenshot
