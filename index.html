@@ -6,22 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <h1>Etch-a-Sketch</h1>
+
     <div class="container">
       <div class="menu">
-        <div class="range-container">
+        <div class="menu-wrapper">
           <label for="range"></label>
-          <input type="range" for="range" min="8" max="64" value="8" />
+          <input type="range" for="range" min="16" max="80" value="16" />
         </div>
-        <div class="color-palette">
-          <p class="colors-label">Pick your season:</p>
-          <button class="option selectopt" id="winter">Winter</button>
-          <button class="option selectopt" id="spring">Spring</button>
-          <button class="option selectopt" id="summer">Summer</button>
-          <button class="option selectopt" id="autumn">Autumn</button>
+        <div class="menu-wrapper">
+          <button class="btn" id="eraser" onclick="changePenColor(bgColor)">
+            Eraser
+          </button>
         </div>
-        <button class="reset">Clear</button>
+
+        <div class="menu-wrapper">
+          <button class="btn" id="reset">Clear</button>
+        </div>
+
+        <div class="menu-wrapper">
+          <label for="color-picker">Pick a color:</label>
+          <input
+            type="color"
+            id="color-picker"
+            name="head"
+            value="black"
+            onclick="changePenColor('color')"
+          />
+        </div>
+        <div class="menu-wrapper">
+          <label class="colors-label">Pick your season:</label>
+          <div id="color-palette">
+            <button
+              class="option"
+              id="spring"
+              onclick="changePenColor('spring')"
+            >
+              Spring
+            </button>
+            <button
+              class="option"
+              id="summer"
+              onclick="changePenColor('summer')"
+            >
+              Summer
+            </button>
+            <button
+              class="option"
+              id="autumn"
+              onclick="changePenColor('autumn')"
+            >
+              Autumn
+            </button>
+            <button
+              class="option"
+              id="winter"
+              onclick="changePenColor('winter')"
+            >
+              Winter
+            </button>
+          </div>
+        </div>
       </div>
       <div class="grid"></div>
     </div>
