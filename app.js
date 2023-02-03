@@ -9,7 +9,7 @@ const gridSize = document.querySelector('input');
 const labelRange = document.querySelector('label');
 const colorPicker = document.querySelector('#color-picker');
 let color = 'black';
-let click = false;
+let click = true;
 const bgColor = `rgba(255, 255, 255, 0.651)`;
 
 //Functions
