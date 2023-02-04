@@ -25,6 +25,7 @@ h1 {
   font-family: 'Fascinate Inline', cursive;
   text-align: center;
   font-size: 5rem;
+  padding: 1em;
 }
 
 .container {
@@ -98,6 +99,10 @@ input[type='range']::-webkit-slider-runnable-track {
 #color-picker {
   width: 100%;
   max-width: 50px;
+}
+
+button {
+  color: black;
 }
 
 .option,
