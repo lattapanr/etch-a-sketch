@@ -26,7 +26,7 @@ function makeGrids(size) {
     const divs = document.createElement('div');
     divs.classList.add('box');
     divs.addEventListener('mouseover', draw);
-    divs.addEventListener('touchstart', draw);
+    divs.addEventListener('touchmove', draw);
     grid.appendChild(divs);
   }
 }
@@ -34,7 +34,8 @@ function makeGrids(size) {
 makeGrids(gridSize.value);
 
 //Activates mouse to draw when the user keeps holding the mouse down through the boxes
-function draw() {
+function draw(e) {
+  e.preventDefault();
   if (click) {
     if (color === 'winter') {
       this.style.backgroundColor = getWinter();
