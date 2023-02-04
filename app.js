@@ -1,7 +1,6 @@
 'use strict';
 
 const container = document.querySelector('.container');
-const fragment = document.createDocumentFragment();
 const grid = document.querySelector('.grid');
 const btnReset = document.querySelector('#reset');
 const btnEraser = document.querySelector('#eraser');
@@ -20,21 +19,19 @@ displaySize();
 
 //Create cells and append it to DocumentFragment
 function makeGrids(size) {
-  let boxSize = grid.clientWidth / size;
-  let gridSize = size * size;
+  grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+  grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
-  for (let i = 0; i < gridSize; i++) {
+  for (let i = 0; i < size * size; i++) {
     const divs = document.createElement('div');
     divs.classList.add('box');
-    divs.style.width = `${boxSize}px`;
-    divs.style.height = `${boxSize}px`;
-    fragment.appendChild(divs);
     divs.addEventListener('mouseover', draw);
+    divs.addEventListener('touchstart', draw);
+    grid.appendChild(divs);
   }
 }
 //REMINDER: Have to create grids first before appending them to the 'container'
 makeGrids(gridSize.value);
-grid.appendChild(fragment);
 
 //Activates mouse to draw when the user keeps holding the mouse down through the boxes
 function draw() {
@@ -99,7 +96,6 @@ function resetBoard() {
     grid.removeChild(grid.lastChild);
   }
   makeGrids(gridSize.value);
-  grid.appendChild(fragment);
   color = 'black';
 }
 

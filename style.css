@@ -64,8 +64,7 @@ button {
   width: 500px;
   height: 500px;
   background: white;
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
   border: var(--bg-color-secondary) 5px solid;
 }
 
@@ -134,27 +133,25 @@ input[type='range']::-webkit-slider-runnable-track {
 }
 
 /* TODO: learn about tablet & phone touch events and implement below for smaller screen sizes */
-/* @media (max-width: 920px) {
+@media (max-width: 920px) {
   .container {
     flex-direction: column;
     width: 80vw;
+    justify-content: space-evenly;
   }
 
   .grid {
     width: 400px;
     height: 400px;
+    margin: 1em;
   }
 
   .menu {
     flex-direction: row;
+    height: auto;
     flex-wrap: wrap;
     width: 90%;
-    padding: 2em 0;
-    align-items: center;
-  }
-
-  .menu-wrapper {
-    width: 30%;
+    padding: 1em 0;
     align-items: center;
   }
 
@@ -168,4 +165,26 @@ input[type='range']::-webkit-slider-runnable-track {
     max-width: 60px;
     max-height: 30px;
   }
-} */
+}
+@media (max-width: 550px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .container {
+    width: 90%;
+  }
+
+  .grid {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .container {
+    width: 100%;
+  }
+}
