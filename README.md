@@ -21,7 +21,7 @@ To see the live demo [click here](https://itsnoey.github.io/etch-a-sketch/)
 - Button for clearing the board 
 
 ## What I Learned
-- Creating multiple elements and append them to DocumentFragment to avoid reflow and repaint of the page (might have to check if any repaint pr reflow is happening when the container’s size has been specified
+- Creating multiple elements and append them the page 
 - Connecting mouse events to elements created by JavaScript
 - Using HTML’s input type “range” to change the amount of the grids
 - Resetting the board by removing all of the children elements using “while” loop
