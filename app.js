@@ -39,7 +39,7 @@ const seasons = {
   autumn: ['#b39c4d', '#373d20', '#717744', '#bcbd8b', '#766153'],
 };
 
-//Get random colors from 'seasons object and return colors of each season that is called in the parameter 'season'
+//Get random colors from 'seasons' object and return colors of each season that is called in the parameter 'season'
 function getRandomColor(season) {
   const colors = seasons[season];
   return colors[Math.floor(Math.random() * colors.length)];
@@ -56,8 +56,7 @@ function changePenColor(colorChoice) {
 }
 
 //Activates mouse to draw when 'click' is truthy with assigned color
-function draw(e) {
-  e.preventDefault();
+function draw() {
   //if click is falsy, the conditions wont run
   if (!click) return;
   let bgColor;
