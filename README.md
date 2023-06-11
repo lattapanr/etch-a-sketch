@@ -1,6 +1,6 @@
 # Etch-a-Sketch
 
-Etch-a-Sketch is a game where you can draw on a grid pad. You can change the color of your pen and the size of the grid. This project is sadly not responsive. 
+Etch-a-Sketch is a game where you can draw on a grid pad. You can change the color of your pen and the size of the grid. 
 
 I love sending my project out to my friends and family for them to play with, but I will need to learn the touch events for mobile and tablet first. I will come back and try to make it look as nice and functional as possible on smaller screens. 
 
