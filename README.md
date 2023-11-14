@@ -6,7 +6,7 @@ I love sending my project out to my friends and family for them to play with, bu
 
 ## Live Demo
 
-To see the live demo [click here]([https://itsnoey.github.io/etch-a-sketch/](https://etch-a-sketch-wheat.vercel.app/))
+To see the live demo [click here]([https://itsnoey.github.io/etch-a-sketch/](https://etch-a-sketch-wheat.vercel.app/)
 
 
 ## Screenshot
